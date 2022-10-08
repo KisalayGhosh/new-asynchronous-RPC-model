@@ -1,1 +1,2 @@
 # new-asynchronous-RPC-model
+In this project I made a RPC model which enables client server communication without client being waited for the response from the server. I took two FIFO queues in both client and server sides to order the request that client is making to server. Server will process these requests according to the FIFO order and send feedback results to client in the same way as they came to server in FIFO order. This enhances the efficiency of the client as more number of requests can be sent to server without waiting for the responses.
